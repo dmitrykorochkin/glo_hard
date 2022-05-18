@@ -1,10 +1,12 @@
 
-let lang = 'ru';
+const lang = 'en';
+const ru = ('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+const en = ('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
 
 if (lang === 'ru') {
-    console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
+    console.log(ru);
 } else if (lang === 'en') {
-    console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+    console.log(en);
 } else {
     console.log('');
 }
@@ -12,24 +14,24 @@ if (lang === 'ru') {
 
 switch (lang) {
     case 'ru':
-        console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
+        console.log(ru);
         break;
     case 'en':
-        console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+        console.log(en);
         break;
     default:
         console.log('');
 }
 
 
-let langArr = [];
+const langArr = [];
 langArr.ru = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
 langArr.en = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 console.log(langArr[lang]);
 
 const langArray = {
-    ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-    en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    ru: [langArr.ru],
+    en: [langArr.en]
 };
 console.log(langArray[lang]);
 
